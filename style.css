@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 10px 20px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --blue: #24486B;
+    --offWhite: #F9F9F9;
+    --lightBlue: #E3F0F9;
+    --title: 40px;
+    --subTitle: 32px;
+}
+
+h1,
+h2,
+ul li {
+    color: var(--blue);
+    text-decoration: none;
+    list-style: none;
+}
+
+h1 {
+    font-size: var(--title);
+    font-weight: 700;
+}
+
+h2 {
+    font-size: var(--subTitle);
+    font-weight: 500;
+}
+
+/*---- navegação ----*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .menu {
+    display: flex;
+    gap: 30px;
+    font-size: var(--subTitle);
+    font-weight: 500;
+}
+
+main {
+    max-width: 1600px;
+}
+
+/*---- seção banner ----*/
+
+#banner {
+    background-color: red;
+    height: 860px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 30px;
+}
+
+#banner button {
+    padding: 8px 20px;
+    font-weight: 500;
+    font-size: var(--subTitle);
+    color: var(--offWhite);
+    background-color: var(--blue);
+    border-radius: 30px;
+    border: none;
+}
+
+/*---- seção destino ----*/
+
+#destino {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#destino .card_destino_group {
+    display: flex;
+}
+
+
+#destino .card_destino_group .card_destino {
+    display: flex;
+    flex-direction: column;
+     justify-content: center;
+    align-items: center;
+}
+
+#destino .card_destino_group .card_destino img{
+    height: 475px;
+    border-radius: 30px;
+}
+
+/*---- seção informativo ----*/
+
+#informativo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 680px;
+    padding: 60px;
+    background-color: var(--lightBlue);
+    border-radius: 30px;
+}
+
+#informativo .info_content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#informativo img{
+    width: 650px;
+    height: 560px;
+    border-radius: 30px;
+}
+
+/*---- Rodapé ----*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 60px 30px;
+    background-color: var(--blue);
+    border-radius: 30px 30px 0 0;
+}
+
+footer .footer_content{
+    display: flex;
+    gap: 20px;
+}
+
+footer .footer_content .first,
+footer .footer_content .middle,
+footer .footer_content .end{
+ display: flex;
+ flex-direction: column;
+ 
+}
+
+footer .footer_content .first h1,
+footer .footer_content .middle h1,
+footer .footer_content .end h1,
+footer .footer_content .first h2,
+footer .footer_content .middle ul li,
+footer .footer_content .end h2, 
+footer .rights h2{
+    color: var(--offWhite);
+}
+
+footer .footer_content .middle ul li{
+    font-size: var(--subTitle);
+}
+
+footer .rights {
+    display: flex;
+    justify-content: center;
+}
